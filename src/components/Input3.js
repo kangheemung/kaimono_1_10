@@ -7,8 +7,8 @@ function Input3({ productName3, setProductName3, price3, setPrice3, quantity3, s
     setPrice3(selectedProduct.price);
   };
   const handleQuantityChange = (e) => {
-    const quantity = parseInt(e.target.value, 10);
-    setQuantity3(quantity ); // or provide a default value like 0
+    const quantity3 = parseInt(e.target.value, 10);
+    setQuantity3(quantity3 ); // or provide a default value like 0
   };
   const totalPrice = price3 * quantity3;
   return (

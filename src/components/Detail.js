@@ -5,7 +5,11 @@ function Detail() {
     const location = useLocation();
     const { state } = location;
     const navigate = useNavigate();
-    
+    console.log(location.pathname); // 現在のURLのパス部分
+    console.log(location.search);   // URLのクエリパラメータ
+   console.log(location.state);    // ルート遷移時に渡された状態データの中身
+
+//
       const  handleBackToTopClick = () => {
         navigate('/');
       };
