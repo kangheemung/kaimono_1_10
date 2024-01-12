@@ -7,7 +7,7 @@ function StartShoppingButton() {
   const location = useLocation();
 
   function handleStartShoppingClick() {
-    navigate('/kaimono'); // navigate to the /kaimono path
+    navigate('/kaimono'); // navigate でURL /kaimono 指定
   }
 // 現在のURLパスに応じてボタンの表示を制御する
 if (location.pathname === '/kaimono') {

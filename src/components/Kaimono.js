@@ -20,7 +20,7 @@ function Kaimono() {
   const [productName3, setProductName3] = useState('');
   const [price3, setPrice3] = useState('');
   const [quantity3, setQuantity3] = useState(0);
-  
+
   const navigate = useNavigate();
 
   const products = [

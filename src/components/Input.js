@@ -1,17 +1,18 @@
 import React from 'react'
 
 function Input({ productName1, setProductName1, price1, setPrice1, quantity1, setQuantity1, products }) {
+  
   const handleProductChange = (e) => {
     const selectedProduct = products.find(product => product.name === e.target.value);
     setProductName1(selectedProduct.name);
-    setPrice1(selectedProduct.price);
+    setPrice1(selectedProduct.price);//selectの商品名と値段一致させる。
   };
   const handleQuantityChange = (e) => {
     const quantity1 = parseInt(e.target.value, 10);
-    setQuantity1(quantity1 ); // or provide a default value like 0
+    setQuantity1(quantity1 );//inputの数量変える
   };
 
-  const totalPrice = price1 * quantity1;
+  const totalPrice = price1 * quantity1;//商品名の値段と数量を×値段を計算します。
 
 
   return (
